@@ -24,6 +24,8 @@ namespace Filmoteka
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "dataSet1.Films". При необходимости она может быть перемещена или удалена.
+            this.filmsTableAdapter.Fill(this.dataSet1.Films);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "dataSet1.Director". При необходимости она может быть перемещена или удалена.
             this.directorTableAdapter.Fill(this.dataSet1.Director);
             
