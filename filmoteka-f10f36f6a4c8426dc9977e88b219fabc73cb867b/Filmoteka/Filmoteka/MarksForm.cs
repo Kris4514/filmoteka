@@ -48,11 +48,11 @@ namespace Filmoteka
             connection.Open();
             year.Text = da2.ExecuteScalar().ToString();
 
-            byte[] byteArray = new byte[0];
-            string sqlCommand_foto = "select [poster] from [Films] WHERE [name]='" + GlobalClass.Variant1 + "'";
-            MemoryStream ms = new MemoryStream(byteArray);
-            Image img = Bitmap.FromStream(ms);
-            this.pictureBox1.Image = img;
+            //byte[] byteArray = new byte[0];
+            //string sqlCommand_foto = "select [poster] from [Films] WHERE [name]='" + GlobalClass.Variant1 + "'";
+            //MemoryStream ms = new MemoryStream(byteArray);
+            //Image img = Bitmap.FromStream(ms);
+            //this.pictureBox1.Image = img;
             connection.Close();
             //year.Text = "select [year] from [Films] WHERE [name]='" + GlobalClass.Variant1 + "'";
 
@@ -93,6 +93,37 @@ namespace Filmoteka
             // TODO: данная строка кода позволяет загрузить данные в таблицу "dataSet1.Films". При необходимости она может быть перемещена или удалена.
             this.filmsTableAdapter.Fill(this.dataSet1.Films);
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string connectionString = @"Data Source=LAPTOP-6038JFDU;Initial Catalog=FilmDB;Integrated Security=True";
+            SqlConnection connection = new SqlConnection(connectionString);
+            byte[] byteArray = new byte[0];
+            string sqlCommand = "select [poster] from [Films] WHERE [name]='" + GlobalClass.Variant1 + "'";
+            connection.Open();
+            try
+            {
+                SqlCommand myCommand = new SqlCommand(sqlCommand,connection);
+                SqlDataReader myDataReader;
+                myDataReader = myCommand.ExecuteReader();
+
+                while (myDataReader.Read())
+                {
+                    byteArray = new byte[((byte[])myDataReader["poster"]).Length];
+                    byteArray = (byte[])myDataReader["poster"];
+                    break;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка");
+            }
+            connection.Close();
+            MemoryStream ms = new MemoryStream(byteArray);
+            Image img = Image.FromStream(ms);
+            this.pictureBox1.Image = img;
+            ms.Close();
         }
     }
 }
