@@ -30,7 +30,6 @@ namespace Filmoteka
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MarksForm));
             this.label1 = new System.Windows.Forms.Label();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -50,7 +49,6 @@ namespace Filmoteka
             this.director = new System.Windows.Forms.Label();
             this.year = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -65,20 +63,19 @@ namespace Filmoteka
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(85, 11);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(732, 93);
+            this.label1.Size = new System.Drawing.Size(638, 91);
             this.label1.TabIndex = 0;
             this.label1.Text = "Оцените фильм";
             // 
             // trackBar1
             // 
             this.trackBar1.LargeChange = 1;
-            this.trackBar1.Location = new System.Drawing.Point(155, 545);
-            this.trackBar1.Margin = new System.Windows.Forms.Padding(4);
+            this.trackBar1.Location = new System.Drawing.Point(131, 631);
+            this.trackBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trackBar1.Maximum = 5;
             this.trackBar1.Minimum = 1;
             this.trackBar1.Name = "trackBar1";
@@ -90,8 +87,8 @@ namespace Filmoteka
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Filmoteka.Properties.Resources.icons8_новогодняя_елка_96;
-            this.pictureBox6.Location = new System.Drawing.Point(687, 421);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox6.Location = new System.Drawing.Point(663, 507);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(132, 117);
             this.pictureBox6.TabIndex = 11;
@@ -100,8 +97,8 @@ namespace Filmoteka
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Filmoteka.Properties.Resources.icons8_новогодняя_елка_96;
-            this.pictureBox5.Location = new System.Drawing.Point(547, 421);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox5.Location = new System.Drawing.Point(523, 507);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(132, 117);
             this.pictureBox5.TabIndex = 10;
@@ -110,8 +107,8 @@ namespace Filmoteka
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Filmoteka.Properties.Resources.icons8_новогодняя_елка_96;
-            this.pictureBox4.Location = new System.Drawing.Point(407, 421);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox4.Location = new System.Drawing.Point(383, 507);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(132, 117);
             this.pictureBox4.TabIndex = 9;
@@ -120,8 +117,8 @@ namespace Filmoteka
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Filmoteka.Properties.Resources.icons8_новогодняя_елка_96;
-            this.pictureBox3.Location = new System.Drawing.Point(267, 421);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Location = new System.Drawing.Point(243, 507);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(132, 117);
             this.pictureBox3.TabIndex = 8;
@@ -130,8 +127,8 @@ namespace Filmoteka
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Filmoteka.Properties.Resources.icons8_новогодняя_елка_96;
-            this.pictureBox2.Location = new System.Drawing.Point(127, 421);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(103, 507);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(132, 117);
             this.pictureBox2.TabIndex = 7;
@@ -140,41 +137,34 @@ namespace Filmoteka
             // valuelabel
             // 
             this.valuelabel.AutoSize = true;
-            this.valuelabel.BackColor = System.Drawing.Color.White;
-            this.valuelabel.Font = new System.Drawing.Font("Bookman Old Style", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.valuelabel.ForeColor = System.Drawing.Color.Teal;
+            this.valuelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.valuelabel.Location = new System.Drawing.Point(467, 316);
             this.valuelabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.valuelabel.Name = "valuelabel";
-            this.valuelabel.Size = new System.Drawing.Size(32, 33);
+            this.valuelabel.Size = new System.Drawing.Size(29, 31);
             this.valuelabel.TabIndex = 12;
             this.valuelabel.Text = "0";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Bookman Old Style", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.Teal;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(331, 316);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 33);
+            this.label2.Size = new System.Drawing.Size(110, 31);
             this.label2.TabIndex = 13;
             this.label2.Text = "Оценка";
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Bookman Old Style", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.Color.Teal;
             this.button1.Location = new System.Drawing.Point(337, 374);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 14;
             this.button1.Text = "Постер";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataSet1
@@ -203,79 +193,62 @@ namespace Filmoteka
             // namefilmLabel
             // 
             this.namefilmLabel.AutoSize = true;
-            this.namefilmLabel.BackColor = System.Drawing.Color.White;
-            this.namefilmLabel.Font = new System.Drawing.Font("Bookman Old Style", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.namefilmLabel.ForeColor = System.Drawing.Color.Teal;
+            this.namefilmLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.namefilmLabel.Location = new System.Drawing.Point(328, 132);
             this.namefilmLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namefilmLabel.Name = "namefilmLabel";
-            this.namefilmLabel.Size = new System.Drawing.Size(423, 52);
+            this.namefilmLabel.Size = new System.Drawing.Size(397, 52);
             this.namefilmLabel.TabIndex = 2;
             this.namefilmLabel.Text = "Название фильма";
             // 
             // genre
             // 
             this.genre.AutoSize = true;
-            this.genre.BackColor = System.Drawing.Color.White;
-            this.genre.Font = new System.Drawing.Font("Bookman Old Style", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.genre.ForeColor = System.Drawing.Color.Teal;
+            this.genre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.genre.Location = new System.Drawing.Point(443, 194);
             this.genre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.genre.Name = "genre";
-            this.genre.Size = new System.Drawing.Size(90, 33);
+            this.genre.Size = new System.Drawing.Size(78, 31);
             this.genre.TabIndex = 5;
             this.genre.Text = "жанр";
             // 
             // director
             // 
             this.director.AutoSize = true;
-            this.director.BackColor = System.Drawing.Color.White;
-            this.director.Font = new System.Drawing.Font("Bookman Old Style", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.director.ForeColor = System.Drawing.Color.Teal;
+            this.director.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.director.Location = new System.Drawing.Point(329, 250);
             this.director.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.director.Name = "director";
-            this.director.Size = new System.Drawing.Size(182, 41);
+            this.director.Size = new System.Drawing.Size(174, 39);
             this.director.TabIndex = 4;
             this.director.Text = "Режиссер";
             // 
             // year
             // 
             this.year.AutoSize = true;
-            this.year.BackColor = System.Drawing.Color.White;
-            this.year.Font = new System.Drawing.Font("Bookman Old Style", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.year.ForeColor = System.Drawing.Color.Teal;
+            this.year.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.year.Location = new System.Drawing.Point(331, 194);
             this.year.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.year.Name = "year";
-            this.year.Size = new System.Drawing.Size(61, 33);
+            this.year.Size = new System.Drawing.Size(55, 31);
             this.year.TabIndex = 3;
             this.year.Text = "год";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(36, 132);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(213, 236);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(283, 120);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(536, 248);
-            this.panel1.TabIndex = 16;
-            // 
             // MarksForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(997, 602);
+            this.ClientSize = new System.Drawing.Size(865, 725);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -291,12 +264,9 @@ namespace Filmoteka
             this.Controls.Add(this.year);
             this.Controls.Add(this.namefilmLabel);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MarksForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Оценка";
+            this.Text = "MarksForm";
             this.Load += new System.EventHandler(this.MarksForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -333,6 +303,5 @@ namespace Filmoteka
         private System.Windows.Forms.Label director;
         private System.Windows.Forms.Label year;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
     }
 }

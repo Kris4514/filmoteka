@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.label1 = new System.Windows.Forms.Label();
             this.LoginBox = new System.Windows.Forms.TextBox();
             this.PasswordBox = new System.Windows.Forms.TextBox();
@@ -36,27 +35,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Passbutton = new System.Windows.Forms.Button();
             this.Registratebutton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.Teal;
-            this.label1.Location = new System.Drawing.Point(94, 14);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.label1.Location = new System.Drawing.Point(48, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(356, 57);
+            this.label1.Size = new System.Drawing.Size(329, 58);
             this.label1.TabIndex = 0;
             this.label1.Text = "Авторизация";
             // 
             // LoginBox
             // 
             this.LoginBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LoginBox.Location = new System.Drawing.Point(118, 135);
+            this.LoginBox.Location = new System.Drawing.Point(124, 137);
             this.LoginBox.Name = "LoginBox";
             this.LoginBox.Size = new System.Drawing.Size(295, 38);
             this.LoginBox.TabIndex = 1;
@@ -65,107 +59,69 @@
             // PasswordBox
             // 
             this.PasswordBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PasswordBox.Location = new System.Drawing.Point(118, 228);
+            this.PasswordBox.Location = new System.Drawing.Point(124, 238);
             this.PasswordBox.Name = "PasswordBox";
-            this.PasswordBox.PasswordChar = '*';
+            this.PasswordBox.PasswordChar = 'Х';
             this.PasswordBox.Size = new System.Drawing.Size(295, 38);
             this.PasswordBox.TabIndex = 2;
             // 
             // Логин
             // 
             this.Логин.AutoSize = true;
-            this.Логин.Font = new System.Drawing.Font("Bookman Old Style", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Логин.ForeColor = System.Drawing.Color.Teal;
-            this.Логин.Location = new System.Drawing.Point(112, 100);
+            this.Логин.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Логин.Location = new System.Drawing.Point(5, 137);
             this.Логин.Name = "Логин";
-            this.Логин.Size = new System.Drawing.Size(99, 33);
+            this.Логин.Size = new System.Drawing.Size(93, 32);
             this.Логин.TabIndex = 3;
             this.Логин.Text = "Логин";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bookman Old Style", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.Teal;
-            this.label2.Location = new System.Drawing.Point(112, 192);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(5, 238);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 33);
+            this.label2.Size = new System.Drawing.Size(113, 32);
             this.label2.TabIndex = 4;
             this.label2.Text = "Пароль";
             // 
             // Passbutton
             // 
-            this.Passbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Passbutton.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.Passbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PaleTurquoise;
-            this.Passbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MintCream;
-            this.Passbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Passbutton.Font = new System.Drawing.Font("Bookman Old Style", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Passbutton.ForeColor = System.Drawing.Color.Teal;
-            this.Passbutton.Location = new System.Drawing.Point(118, 312);
+            this.Passbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Passbutton.Location = new System.Drawing.Point(103, 324);
             this.Passbutton.Name = "Passbutton";
-            this.Passbutton.Size = new System.Drawing.Size(295, 39);
+            this.Passbutton.Size = new System.Drawing.Size(227, 57);
             this.Passbutton.TabIndex = 5;
             this.Passbutton.Text = "Войти";
-            this.Passbutton.UseVisualStyleBackColor = false;
+            this.Passbutton.UseVisualStyleBackColor = true;
             this.Passbutton.Click += new System.EventHandler(this.Passbutton_Click);
             // 
             // Registratebutton
             // 
-            this.Registratebutton.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.Registratebutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PaleTurquoise;
-            this.Registratebutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MintCream;
-            this.Registratebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Registratebutton.Font = new System.Drawing.Font("Bookman Old Style", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Registratebutton.ForeColor = System.Drawing.Color.Teal;
-            this.Registratebutton.Location = new System.Drawing.Point(118, 357);
+            this.Registratebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Registratebutton.Location = new System.Drawing.Point(103, 399);
             this.Registratebutton.Name = "Registratebutton";
-            this.Registratebutton.Size = new System.Drawing.Size(295, 48);
+            this.Registratebutton.Size = new System.Drawing.Size(227, 39);
             this.Registratebutton.TabIndex = 6;
             this.Registratebutton.Text = "Регистрация";
             this.Registratebutton.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(775, 620);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.Registratebutton);
-            this.panel1.Controls.Add(this.Логин);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.LoginBox);
-            this.panel1.Controls.Add(this.PasswordBox);
-            this.panel1.Controls.Add(this.Passbutton);
-            this.panel1.Location = new System.Drawing.Point(103, 58);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(533, 457);
-            this.panel1.TabIndex = 8;
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(775, 620);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBox1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ClientSize = new System.Drawing.Size(431, 450);
+            this.Controls.Add(this.Registratebutton);
+            this.Controls.Add(this.Passbutton);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Логин);
+            this.Controls.Add(this.PasswordBox);
+            this.Controls.Add(this.LoginBox);
+            this.Controls.Add(this.label1);
             this.Name = "LoginForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Авторизация";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -178,7 +134,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Passbutton;
         private System.Windows.Forms.Button Registratebutton;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
     }
 }

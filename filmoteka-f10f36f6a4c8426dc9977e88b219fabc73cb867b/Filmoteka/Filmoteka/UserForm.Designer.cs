@@ -74,7 +74,7 @@ namespace Filmoteka
             // id_filmLabel2
             // 
             id_filmLabel2.AutoSize = true;
-            id_filmLabel2.Location = new System.Drawing.Point(519, 295);
+            id_filmLabel2.Location = new System.Drawing.Point(528, 414);
             id_filmLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             id_filmLabel2.Name = "id_filmLabel2";
             id_filmLabel2.Size = new System.Drawing.Size(48, 17);
@@ -84,7 +84,7 @@ namespace Filmoteka
             // nameLabel2
             // 
             nameLabel2.AutoSize = true;
-            nameLabel2.Location = new System.Drawing.Point(519, 323);
+            nameLabel2.Location = new System.Drawing.Point(528, 442);
             nameLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             nameLabel2.Name = "nameLabel2";
             nameLabel2.Size = new System.Drawing.Size(47, 17);
@@ -94,7 +94,7 @@ namespace Filmoteka
             // posterLabel
             // 
             posterLabel.AutoSize = true;
-            posterLabel.Location = new System.Drawing.Point(519, 355);
+            posterLabel.Location = new System.Drawing.Point(528, 474);
             posterLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             posterLabel.Name = "posterLabel";
             posterLabel.Size = new System.Drawing.Size(52, 17);
@@ -104,7 +104,7 @@ namespace Filmoteka
             // yearLabel2
             // 
             yearLabel2.AutoSize = true;
-            yearLabel2.Location = new System.Drawing.Point(519, 420);
+            yearLabel2.Location = new System.Drawing.Point(528, 539);
             yearLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             yearLabel2.Name = "yearLabel2";
             yearLabel2.Size = new System.Drawing.Size(40, 17);
@@ -114,7 +114,7 @@ namespace Filmoteka
             // urlLabel2
             // 
             urlLabel2.AutoSize = true;
-            urlLabel2.Location = new System.Drawing.Point(519, 448);
+            urlLabel2.Location = new System.Drawing.Point(528, 567);
             urlLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             urlLabel2.Name = "urlLabel2";
             urlLabel2.Size = new System.Drawing.Size(28, 17);
@@ -124,7 +124,7 @@ namespace Filmoteka
             // directorLabel
             // 
             directorLabel.AutoSize = true;
-            directorLabel.Location = new System.Drawing.Point(519, 477);
+            directorLabel.Location = new System.Drawing.Point(528, 596);
             directorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             directorLabel.Name = "directorLabel";
             directorLabel.Size = new System.Drawing.Size(60, 17);
@@ -134,7 +134,7 @@ namespace Filmoteka
             // ganreLabel
             // 
             ganreLabel.AutoSize = true;
-            ganreLabel.Location = new System.Drawing.Point(519, 505);
+            ganreLabel.Location = new System.Drawing.Point(528, 624);
             ganreLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             ganreLabel.Name = "ganreLabel";
             ganreLabel.Size = new System.Drawing.Size(49, 17);
@@ -183,7 +183,7 @@ namespace Filmoteka
             this.dataGridViewTextBoxColumn6});
             this.filmsDataGridView.DataSource = this.filmsBindingSource;
             this.filmsDataGridView.Location = new System.Drawing.Point(16, 28);
-            this.filmsDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.filmsDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.filmsDataGridView.Name = "filmsDataGridView";
             this.filmsDataGridView.RowHeadersWidth = 51;
             this.filmsDataGridView.Size = new System.Drawing.Size(867, 261);
@@ -254,7 +254,7 @@ namespace Filmoteka
             // id_filmLabel3
             // 
             this.id_filmLabel3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.filmsBindingSource, "id_film", true));
-            this.id_filmLabel3.Location = new System.Drawing.Point(587, 295);
+            this.id_filmLabel3.Location = new System.Drawing.Point(596, 414);
             this.id_filmLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.id_filmLabel3.Name = "id_filmLabel3";
             this.id_filmLabel3.Size = new System.Drawing.Size(133, 28);
@@ -264,8 +264,8 @@ namespace Filmoteka
             // posterPictureBox
             // 
             this.posterPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.filmsBindingSource, "poster", true));
-            this.posterPictureBox.Location = new System.Drawing.Point(587, 355);
-            this.posterPictureBox.Margin = new System.Windows.Forms.Padding(4);
+            this.posterPictureBox.Location = new System.Drawing.Point(596, 474);
+            this.posterPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.posterPictureBox.Name = "posterPictureBox";
             this.posterPictureBox.Size = new System.Drawing.Size(133, 62);
             this.posterPictureBox.TabIndex = 14;
@@ -275,7 +275,7 @@ namespace Filmoteka
             // urlLabel3
             // 
             this.urlLabel3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.filmsBindingSource, "url", true));
-            this.urlLabel3.Location = new System.Drawing.Point(587, 448);
+            this.urlLabel3.Location = new System.Drawing.Point(596, 567);
             this.urlLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.urlLabel3.Name = "urlLabel3";
             this.urlLabel3.Size = new System.Drawing.Size(133, 28);
@@ -285,7 +285,7 @@ namespace Filmoteka
             // ganreLabel1
             // 
             this.ganreLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.filmsBindingSource, "ganre", true));
-            this.ganreLabel1.Location = new System.Drawing.Point(587, 505);
+            this.ganreLabel1.Location = new System.Drawing.Point(596, 624);
             this.ganreLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ganreLabel1.Name = "ganreLabel1";
             this.ganreLabel1.Size = new System.Drawing.Size(133, 28);
@@ -295,7 +295,7 @@ namespace Filmoteka
             // directorLabel1
             // 
             this.directorLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.filmsBindingSource, "director", true));
-            this.directorLabel1.Location = new System.Drawing.Point(587, 477);
+            this.directorLabel1.Location = new System.Drawing.Point(596, 596);
             this.directorLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.directorLabel1.Name = "directorLabel1";
             this.directorLabel1.Size = new System.Drawing.Size(133, 28);
@@ -305,7 +305,7 @@ namespace Filmoteka
             // yearLabel3
             // 
             this.yearLabel3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.filmsBindingSource, "year", true));
-            this.yearLabel3.Location = new System.Drawing.Point(587, 420);
+            this.yearLabel3.Location = new System.Drawing.Point(596, 539);
             this.yearLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.yearLabel3.Name = "yearLabel3";
             this.yearLabel3.Size = new System.Drawing.Size(133, 28);
@@ -315,7 +315,7 @@ namespace Filmoteka
             // nameLabel3
             // 
             this.nameLabel3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.filmsBindingSource, "name", true));
-            this.nameLabel3.Location = new System.Drawing.Point(587, 323);
+            this.nameLabel3.Location = new System.Drawing.Point(596, 442);
             this.nameLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nameLabel3.Name = "nameLabel3";
             this.nameLabel3.Size = new System.Drawing.Size(133, 28);
@@ -326,7 +326,7 @@ namespace Filmoteka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(997, 602);
+            this.ClientSize = new System.Drawing.Size(1457, 752);
             this.Controls.Add(id_filmLabel2);
             this.Controls.Add(this.id_filmLabel3);
             this.Controls.Add(nameLabel2);
@@ -342,9 +342,8 @@ namespace Filmoteka
             this.Controls.Add(ganreLabel);
             this.Controls.Add(this.ganreLabel1);
             this.Controls.Add(this.filmsDataGridView);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UserForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserForm";
             this.Load += new System.EventHandler(this.UserForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();

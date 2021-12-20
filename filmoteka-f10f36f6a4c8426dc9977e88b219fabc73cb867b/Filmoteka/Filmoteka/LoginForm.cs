@@ -28,7 +28,7 @@ namespace Filmoteka
         {
             Role role = Role.Failed;
             //Заменить в сервере строку подключения на свою добавив два слеша
-            using (var connection = new SqlConnection("server=DESKTOP-TJEJKLI\\SQLEXPRESS;Trusted_Connection=Yes;Database=FilmDB;"))
+            using (var connection = new SqlConnection("server=HOME-PC\\SQLEXPRESS;Trusted_Connection=Yes;Database=FilmDB;"))
             {
                 connection.Open();
                 var command = new SqlCommand("Select [Role] From [Users] WHERE Login=@Login AND Password=@Password", connection);
